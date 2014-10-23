@@ -46,7 +46,7 @@ nav li {
 	padding-bottom: 15px;
 }
 
-nav a:link, a:visited {
+nav a:link, nav a:visited {
     display: block;
     color: #FFFFFF;
     padding: 10px;
@@ -55,7 +55,7 @@ nav a:link, a:visited {
     border-radius: 5px;
 }
 
-nav a:hover, a:active {
+nav a:hover, nav a:active {
     background-color: #FF6F00;
 }
 
