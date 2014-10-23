@@ -101,6 +101,16 @@ article {
 	float: left;
 }
 
+article #left {
+	float: left;
+	width: 50%;
+}
+
+article #right {
+	float: right;
+	width: 50%;
+}
+
 aside {
 	width: 25%;
 	float: right;
@@ -113,6 +123,23 @@ img, video, canvas {
 
 a:hover {
 	text-decoration: underline;
+}
+
+form {
+	clear: both;
+	margin: auto;
+}
+
+
+input, textarea {
+    width:50%;
+    margin-bottom:5px;
+    line-height:18px;
+    padding:2px 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    border:1px solid #CCC;
 }
 
 @media screen and (max-width: 800px)  {

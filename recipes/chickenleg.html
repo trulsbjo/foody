@@ -7,46 +7,32 @@
 </head>
 
 <body>
-	<header><h1>Kyllinglår med kremet pasta</h1></header>
-	<hr>
-	<nav id="horizontal">
-		<ul>
-			<li><a href="#">Hjem</a></li>
-			<li><a href="#">Oppskrifter</a></li>
-			<li><a href="#">Om oss</a></li>
-		</ul>
-	</nav>
-	<hr>
+	<header>
+		<a href="../index.html">Hjem</a>
+		<a href="../about.html">Om oss</a>		
+	</header>
 
-	<nav id="vertical">
-		<ul>
-			<li><a href="#">Hjem</a></li>
-			<li><a href="#">Oppskrifter</a></li>
-			<li><a href="chickenleg.html">Kyllinglår med kremet pasta</a></li>
-			<li><a href="#">Chili-con-carne</a></li>
-			<li><a href="#">Pølser med sopp og løk</a></li>
-			<li><a href="#">Pitapizza</a></li>
-			<li><a href="#">Middagsvafler</a></li>
-			<li><a href="#">Salat med skinke, jordbær og melon</a></li>
-			<li><a href="#">Kylling- og pastasalat</a></li>
-			<li><a href="#">Karbonader med agurksalat</a></li>
-		</nav>
-		<a href="#">Om oss</a>
-	</nav>
+	<div class="container">
 
-	<img src="../img/chickenleg.jpeg" alt="Kyllinglår med kremet pasta">
+	<h1>Foody <small>din side til en raskere middag</small></h1>
+
+	
 	
 	<article>
-		<div id="title">Slik gjør du:</div>
+	<img src="../img/chickenleg.jpeg" alt="Kyllinglår med kremet pasta">
+	<h2>Kyllinglår med kremet pasta</h2>
+		<section id="left">
+		<div id="title">Slik gjør du</div>
 		<ol>
 			<li>Varm kyllinglårene i ovn på 200° C til de er gjennomvarme ca. 15 minutter.</li>
 			<li>Kok fersk gnocchi i ca. 5 minutter, tørket pasta i ca. 10 minutter. Hell av vannet.</li>
 			<li>Fres hvitløk i litt olje og tilsett eplemost, pesto og fløte. Kok opp og la det koke noen minutter til sausen tykner.</li>
 			<li>Vend inn små aspargestopper, -bønner eller buketter av brokkoli. La grønnsakene bli gjennomvarme i sausen. Bland inn varm pasta.</li>
 		</ol>
-	</article>
+		</section>
 
-	<section>
+
+		<section id="right">
 		<div id="listTitle">Ingredienser</div>
 		<ul>
 			<li>4 stk grillet kyllinglår</li>
@@ -59,21 +45,48 @@
 			<li>200 g aspargestopper , -bønner eller små brokolibuketter</li>
 			<li>4 ss parmesan</li>
 		</ul>
-	</section>
+		</section>
+	</article>
 
-	<form method="post">
-		<input type="text" name="id" value="chickenleg" hidden>
+
+		<aside>
+
+		<nav id="vertical">
 		
-		<label for="name">Name:</label>
-		<input type="text" name="name" required="required">
-		<label for="comment">Comment:</label>
-		<textarea name="comment" requried="required" placeholder="Write your comment here" rows="5"></textarea>
-		<input type="submit" value="Post comment">
-	</form>
+		<ul id="recepies">
+			<li><a href="recipe/chickenleg.html">Kyllinglår med kremet pasta</a></li>
+			<li><a href="#">Chili-con-carne</a></li>
+			<li><a href="#">Pølser med sopp og løk</a></li>
+			<li><a href="#">Pitapizza</a></li>
+			<li><a href="#">Middagsvafler</a></li>
+			<li><a href="#">Salat med skinke, jordbær og melon</a></li>
+			<li><a href="#">Kylling- og pastasalat</a></li>
+			<li><a href="#">Karbonader med agurksalat</a></li>
+		</ul>
+		</nav>
+
+		
+
+		</aside>
+
+		<section id="comments">
+
+		<form method="post">
+		<input type="text" name="id" value="chickenleg" hidden>
+		<label for="name">Navn</label><br>
+		<input type="text" name="name" required="required" placeholder="Skriv ditt navn her">
+		<br>
+		<label for="comment">Kommentar</label><br>
+		<textarea name="comment" requried="required" placeholder="Skriv din kommentar her" rows="5"></textarea>
+		<br>
+		<input type="submit" value="Post kommentar">
+		</form>
+
+		</section>
+
+	</div>
+
+	<footer>Foody AS</footer>
 
 </body>
-
-<hr>
-<footer>Foody AS</footer>
-
 </html>
