@@ -7,35 +7,32 @@
 </head>
 
 <body>
-	<h1>Foody - Din side til en raskere middag</h1>
-	<hr>
-	<nav id="horizontal">
-		<a href="#">Hjem</a> |
-		<a href="#">Oppskrifter</a> |
-		<a href="#">Om oss</a> 
-	</nav>
-	<hr>
+	<header>
+		<a href="index.html">Hjem</a>
+		<a href="about.html">Om oss</a>		
 
-	<nav id="vertical">
-		<ul>
-			<li><a href="#">Hjem</a></li>
-			<li><a href="#">Oppskrifter</a></li>
-			<li><a href="recipe/chickenleg.html">Kyllinglår med kremet pasta</a></li>
-			<li><a href="#">Chili-con-carne</a></li>
-			<li><a href="#">Pølser med sopp og løk</a></li>
-			<li><a href="#">Pitapizza</a></li>
-			<li><a href="#">Middagsvafler</a></li>
-			<li><a href="#">Salat med skinke, jordbær og melon</a></li>
-			<li><a href="#">Kylling- og pastasalat</a></li>
-			<li><a href="#">Karbonader med agurksalat</a></li>
-		</nav>
-		<a href="#">Om oss</a>
-	</nav>
+
+		
+	</header>
+
+	<div class="container">
+	
+	<h1>Foody <small>din side til en raskere middag</small></h1>
+	
+	<article>
 
 	<section id="recommendation">
-		<a href="recipes/chickenleg.html"><img src="img/chickenleg.jpeg" alt="Kyllinglår med kremet pasta"></a>
-		<p>Lyst på noe godt i en travel hverdag? Lyst til å lage noe med kylling, men vet ikke helt hva? Ta en titt på dagens middag</p>
+		<a href="recipes/chickenleg.html">
+		<img src="img/chickenleg.jpeg" alt="Kyllinglår med kremet pasta">
+		<h2>Kyllinglår med kremet pasta</a></h2>
+		</a>
+		
+		<p>Lyst på noe godt i en travel hverdag? Lyst til å lage noe med kylling, men vet ikke helt hva? Ta en titt på dagens middag. Deilig kremet pasta med kyllinglår er en super hverdagsmiddag. </p>
 	</section>
+
+	<div class="and">
+	<p>&</p>
+	</div>
 
 	<section id="recommendation">
 		<a href="#"><img src="img/hamsalad.jpeg" alt="Salat med skinke, jordbær og melon"></a>
@@ -51,8 +48,33 @@
 		<a href="#"><img src="img/hotdog.jpeg" alt="Pølser med sopp og løk"></a>
 		<p>Superrask og superenkel pølserett</p>
 	</section>
-</body>
 
-<hr>
-<footer>Foody AS</footer>
+	</article>
+
+	<aside>
+
+		<nav id="vertical">
+		
+		<ul id="recepies">
+			<li><a href="recipe/chickenleg.html">Kyllinglår med kremet pasta</a></li>
+			<li><a href="#">Chili-con-carne</a></li>
+			<li><a href="#">Pølser med sopp og løk</a></li>
+			<li><a href="#">Pitapizza</a></li>
+			<li><a href="#">Middagsvafler</a></li>
+			<li><a href="#">Salat med skinke, jordbær og melon</a></li>
+			<li><a href="#">Kylling- og pastasalat</a></li>
+			<li><a href="#">Karbonader med agurksalat</a></li>
+		</ul>
+	</nav>
+
+	</aside>
+
+	</div>
+
+<footer>
+<p>Foody AS<br>din side til en raskere middag
+</p>
+</footer>
+
+</body>
 </html>

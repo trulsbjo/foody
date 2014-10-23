@@ -1,29 +1,140 @@
 body {
-	font-family: 'Helvetica', sans-serif;
-	margin: auto;
-	padding: auto;
+	margin: 0 auto;
+	padding: 0 auto;
+}
+
+h1, h2, h3, h4, h5, h6, p, a {
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif
 }
 
 header {
+	margin-top: 20px;
+	margin-bottom: 30px;
 	text-align: center;
+}
+
+footer {
+	height: 100px;
+	background-color: #eee;
+	padding-top: 20px;
+	border-top: 1px solid #ddd;
+	text-align: center;
+	width: 100;
+}
+
+
+header a, header a:visited {
+	text-decoration: none;
+	color: #aaa;
+	padding: 10px;
+	margin: 10px;
+	margin-top: 20px;
+}
+
+nav {
+	color: #66CC33;
+	text-align: right;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+	padding-bottom: 15px;
+}
+
+nav a:link, a:visited {
+    display: block;
+    color: #FFFFFF;
+    padding: 10px;
+    background-color: #6BA400;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+nav a:hover, a:active {
+    background-color: #FF6F00;
+}
+
+
+#recommendation {
+	text-align: center;
+}
+
+#recommendation a {
+	color: #aaa;
+	font-size: 30px;
+	text-decoration: none;
+}
+
+#recommendation p {
+	text-align: left;
+	margin: 0;
+	color: #666;
+}
+
+.and, .and p {
+	color: #eee;
+	font-size: 200px;
+	margin: 30px;
+	text-align: center;
+}
+
+
+.container {
+	margin: auto;
+	padding: auto;
+	overflow: auto;
+}
+
+.container h1 {
+	text-align: center;
+	color: #FF6F00;
+	margin: 50px;
+}
+
+article {
+	width: 70%;
+	float: left;
+}
+
+aside {
+	width: 25%;
+	float: right;
 }
 
 img, video, canvas {
   max-width: 100%;
+  border-radius: 5px;
 }
 
-@media screen and (max-width: 600px)  {
-	body {
+a:hover {
+	text-decoration: underline;
+}
+
+@media screen and (max-width: 800px)  {
+	.container {
 		width: 90%;
 	}
+
+	article {
+		float: none;
+		width: 100%;
+	}
+
+	aside {
+		float: none;
+		width: 100%;
+	}
+
 }
-@media screen and (min-width: 600px) {
-	body {
+@media screen and (min-width: 800px) {
+	.container {
 		width: 90%;
+		max-width: 1000px;
 	}
 }
-@media screen and (min-width: 1200px) {
-	body {
-		width: 70%;
-	}
-}
+
