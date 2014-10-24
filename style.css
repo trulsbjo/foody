@@ -138,6 +138,7 @@ article #profileText {
 	width: 40%;
 	margin-right: 15%;
 	text-align: justify;
+	color: #556270;
 }
 
 article #wall {
@@ -150,6 +151,7 @@ article #wall {
 
 article #description {
 	text-align: justify;
+	color: #556270;
 }
 
 aside {
@@ -207,6 +209,7 @@ input, textarea {
 	font-family: Helvetica, sans-serif;
 	margin-right: 5px;
 	margin-bottom: 5px;
+	color: black;
 }
 
 
