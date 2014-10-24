@@ -7,6 +7,10 @@ h1, h2, h3, h4, h5, h6, p, a {
 	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif
 }
 
+a:hover {
+	text-decoration: underline;
+}
+
 header {
 	margin-top: 20px;
 	margin-bottom: 30px;
@@ -43,22 +47,28 @@ nav ul {
 }
 
 nav li {
-	padding-bottom: 15px;
-}
-
-nav a:link, nav a:visited {
-    display: block;
-    color: #FFFFFF;
-    padding: 10px;
+	margin-bottom: 15px;
+	display: block;
+    
     background-color: #6BA400;
     text-decoration: none;
     border-radius: 5px;
 }
 
-nav a:hover, nav a:active {
-    background-color: #FF6F00;
+nav a {
+	padding: 10px;
+	display: block;
 }
 
+nav a:link, nav a:visited {
+	display: block;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+nav li:hover, nav li.active {
+    background-color: #FF6F00;
+}
 
 #recommendation {
 	text-align: center;
@@ -128,10 +138,6 @@ aside {
 img, video, canvas {
   max-width: 100%;
   border-radius: 5px;
-}
-
-a:hover {
-	text-decoration: underline;
 }
 
 form {
