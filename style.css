@@ -114,7 +114,10 @@ article #left {
 
 article #right {
 	float: right;
-	width: 50%;
+	width: 40%;
+	border-style: solid;
+	border-color: #FFE4C4;
+	background-color: #FAEBD7;
 }
 
 aside {
