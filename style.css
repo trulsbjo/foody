@@ -212,4 +212,13 @@ input, textarea {
 	color: black;
 }
 
+.arrow {
+	text-align: center;
+}
+
+.arrow img{
+	width: 40%;
+	margin: auto;
+}
+
 
