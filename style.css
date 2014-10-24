@@ -117,6 +117,18 @@ article #right {
 	width: 50%;
 }
 
+article #profileImg {
+	float: left;
+	width: 30%;
+}
+
+article #profileText {
+	float: right;
+	width: 40%;
+	margin-right: 15%;
+	text-align: justify;
+}
+
 article #wall {
 	float: right;
 	width: 40%;
@@ -177,5 +189,10 @@ input, textarea {
 		width: 90%;
 		max-width: 1000px;
 	}
+}
+
+.largerText {
+	font-size: 24pt;
+	font-family: Helvetica, sans-serif;
 }
 
