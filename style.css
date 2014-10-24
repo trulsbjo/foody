@@ -76,6 +76,11 @@ nav a:hover, nav a:active {
 	color: #666;
 }
 
+#management {
+	overflow: auto;
+	margin-bottom: 20px;
+}
+
 .and, .and p {
 	color: #eee;
 	font-size: 200px;
