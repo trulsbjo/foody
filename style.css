@@ -124,6 +124,11 @@ article #left {
 
 article #right {
 	float: right;
+	width: 50%;
+}
+
+article #wall {
+	float: right;
 	width: 40%;
 	border-style: solid;
 	border-color: #FFE4C4;
