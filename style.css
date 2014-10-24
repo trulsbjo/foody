@@ -7,6 +7,10 @@ h1, h2, h3, h4, h5, h6, p, a {
 	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif
 }
 
+a:hover {
+	text-decoration: underline;
+}
+
 header {
 	margin-top: 20px;
 	margin-bottom: 30px;
@@ -43,22 +47,28 @@ nav ul {
 }
 
 nav li {
-	padding-bottom: 15px;
-}
-
-nav a:link, nav a:visited {
-    display: block;
-    color: #FFFFFF;
-    padding: 10px;
+	margin-bottom: 15px;
+	display: block;
+    
     background-color: #6BA400;
     text-decoration: none;
     border-radius: 5px;
 }
 
-nav a:hover, nav a:active {
-    background-color: #FF6F00;
+nav a {
+	padding: 10px;
+	display: block;
 }
 
+nav a:link, nav a:visited {
+	display: block;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+nav li:hover, nav li.active {
+    background-color: #FF6F00;
+}
 
 #recommendation {
 	text-align: center;
@@ -71,9 +81,15 @@ nav a:hover, nav a:active {
 }
 
 #recommendation p {
-	text-align: left;
-	margin: 0;
+	text-align: center;
+	margin-top: -30px;
+	margin-bottom: 50px;
 	color: #666;
+}
+
+#management {
+	overflow: auto;
+	margin-bottom: 20px;
 }
 
 .and, .and p {
@@ -99,6 +115,7 @@ nav a:hover, nav a:active {
 article {
 	width: 70%;
 	float: left;
+	overflow: auto;
 }
 
 article #left {
@@ -111,6 +128,26 @@ article #right {
 	width: 50%;
 }
 
+article #profileImg {
+	float: left;
+	width: 30%;
+}
+
+article #profileText {
+	float: right;
+	width: 40%;
+	margin-right: 15%;
+	text-align: justify;
+}
+
+article #wall {
+	float: right;
+	width: 40%;
+	border-style: solid;
+	border-color: #FFE4C4;
+	background-color: #FAEBD7;
+}
+
 aside {
 	width: 25%;
 	float: right;
@@ -119,10 +156,6 @@ aside {
 img, video, canvas {
   max-width: 100%;
   border-radius: 5px;
-}
-
-a:hover {
-	text-decoration: underline;
 }
 
 form {
@@ -164,4 +197,10 @@ input, textarea {
 		max-width: 1000px;
 	}
 }
+
+.largerText {
+	font-size: 24pt;
+	font-family: Helvetica, sans-serif;
+}
+
 
