@@ -148,6 +148,10 @@ article #wall {
 	background-color: #FAEBD7;
 }
 
+article #description {
+	text-align: justify;
+}
+
 aside {
 	width: 25%;
 	float: right;
@@ -201,6 +205,8 @@ input, textarea {
 .largerText {
 	font-size: 24pt;
 	font-family: Helvetica, sans-serif;
+	margin-right: 5px;
+	margin-bottom: 5px;
 }
 
 
