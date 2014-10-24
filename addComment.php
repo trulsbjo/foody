@@ -28,8 +28,8 @@ $filecontent .= "</post>\n</comments>\n";
 $myfile = fopen($commentPath, "w") or die("Unable to open file");
 fwrite($myfile, $filecontent);
 fclose($myfile);
-#header("Location: /foody/recipes/".$parentPost.".html");
-header("Location: /foody/testsubmit.html");
+header("Location: /foody/recipes/".$parentPost.".html");
+#header("Location: /foody/testsubmit.html");
 exit;
 ?>
 
