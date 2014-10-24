@@ -1,5 +1,6 @@
 function getAllComments(parentPost){
-    var XMLfile="comments/"+parentPost+".xml";
+    var XMLfile="../comments/"+parentPost+".xml";
+
     if (window.XMLHttpRequest)
     {
         xhttp=new XMLHttpRequest();
