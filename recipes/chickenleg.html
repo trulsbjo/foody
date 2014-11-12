@@ -75,6 +75,14 @@
 
 		<section id="comments">
 
+        <script>
+/*            window.onload = function(){
+            var msg = window.location.search.replace("?", "").split("=");
+            if(msg[0]=="invalidCaptcha" && msg[1]=="1"){
+                document.getElementById("recaptchaError").innerHTML="Invalid recaptcha";
+            }
+        }*/
+        </script>
 		<form method="post" action="../addComment.php" >
 		<input type="text" name="parentPost" value="chickenleg" hidden>
 		<label for="name">Navn</label><br>
@@ -89,11 +97,19 @@
      		<textarea name="recaptcha_challenge_field" rows="3" cols="40"></textarea>
      		<input type="hidden" name="recaptcha_response_field" value="manual_challenge">
   		</noscript>
+        <span id="recaptchaError" style="color:red;"></span><br />
 		<input type="submit" value="Post kommentar">
 		</form>
 		<br>
+        <p id="comments-cnt"></p>
         <script>
-        getAllComments("chickenleg");
+        window.onload = function(){
+            var msg = window.location.search.replace("?", "").split("=");
+            if(msg[0]=="invalidCaptcha" && msg[1]=="1"){
+                document.getElementById("recaptchaError").innerHTML="Invalid recaptcha";
+            }
+            getAllComments("chickenleg");
+        }
         </script>
 		</section>
 

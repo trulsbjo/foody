@@ -1,7 +1,7 @@
 <?php
 
 require_once('recaptcha-php-1.11/recaptchalib.php');
-if(!@include("local_settings1.php")){
+if(!@include("local_settings.php")){
     $userpath="/trulsbjo";
 }
 
@@ -14,11 +14,13 @@ $resp = recaptcha_check_answer ($privatekey,
 $name = $_POST["name"];
 $parentPost = $_POST["parentPost"];
 $comment = $_POST["comment"];
+$comment = str_replace("<", "", $comment);
+$comment = str_replace(">", "", $comment);
 $parentPost = str_replace(".html", "", $parentPost);
 
  if (!$resp->is_valid) {
    // What happens when the CAPTCHA was entered incorrectly
-   header("Location: ".$userpath."/foody/recipes/".$parentPost.".html?invalidCaptcha=1");
+   header("Location: ".$userpath."/foody/recipes/".$parentPost.".html?invalidCaptcha=1#comments-cnt");
    exit;
 
  } else {
@@ -40,14 +42,13 @@ $parentPost = str_replace(".html", "", $parentPost);
 	$filecontent .= "<post>\n";
 	$filecontent .= "<name>".$name."</name>\n";
 	$filecontent .= "<comment>".$comment."</comment>\n";
-	$filecontent .= "<date>".date("Y-m-d")."</date>\n";
+	$filecontent .= "<date>".date("Y-m-d H:i")."</date>\n";
 	$filecontent .= "</post>\n</comments>\n";
 
 	$myfile = fopen($commentPath, "w") or die("Unable to open file2");
 	fwrite($myfile, $filecontent);
 	fclose($myfile);
-	header("Location: /trulsbjo/foody/recipes/".$parentPost.".html");
-	#header("Location: /foody/testsubmit.html");
+	header("Location: ".$userpath."/foody/recipes/".$parentPost.".html#comments-cnt");
 	exit;
 	}
 ?>
