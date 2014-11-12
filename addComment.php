@@ -9,7 +9,7 @@
 
  if (!$resp->is_valid) {
    // What happens when the CAPTCHA was entered incorrectly
-   header("Location: http://folk.ntnu.no/trulsbjo/foody/recipes/chickenleg.html");
+   header("Location: /foody/recipes/".$parentPost.".html");
    exit;
 
  } else {
@@ -40,7 +40,7 @@
 	$filecontent .= "<date>".date("Y-m-d")."</date>\n";
 	$filecontent .= "</post>\n</comments>\n";
 
-	$myfile = fopen($commentPath, "w") or die("Unable to open file");
+	$myfile = fopen($commentPath, "w") or die("Unable to open file2");
 	fwrite($myfile, $filecontent);
 	fclose($myfile);
 	header("Location: /foody/recipes/".$parentPost.".html");
