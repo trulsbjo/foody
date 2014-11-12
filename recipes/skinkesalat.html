@@ -9,7 +9,7 @@
     		theme : 'white'
  		};
  	</script>
-	<title>Kyllinglår med kremet pasta</title>
+	<title>Salat med skinke, jordbær og melon</title>
 </head>
 
 <body>
@@ -25,15 +25,15 @@
 	
 	
 	<article>
-	<img src="../img/chickenleg.jpeg" alt="Kyllinglår med kremet pasta">
-	<h2>Kyllinglår med kremet pasta</h2>
+	<img src="../img/hamsalad.jpeg" alt="Kyllinglår med kremet pasta">
+	<h2>Salat med skinke, jordbær og melon</h2>
 		<section id="left">
 		<div id="title">Slik gjør du</div>
 		<ol>
-			<li>Varm kyllinglårene i ovn på 200° C til de er gjennomvarme ca. 15 minutter.</li>
-			<li>Kok fersk gnocchi i ca. 5 minutter, tørket pasta i ca. 10 minutter. Hell av vannet.</li>
-			<li>Fres hvitløk i litt olje og tilsett eplemost, pesto og fløte. Kok opp og la det koke noen minutter til sausen tykner.</li>
-			<li>Vend inn små aspargestopper, -bønner eller buketter av brokkoli. La grønnsakene bli gjennomvarme i sausen. Bland inn varm pasta.</li>
+			<li>Skyll salat og riv i passe store biter.</li>
+			<li>Skjær mango, vannmelon, neper og paprika i biter. Skjær kokt skinke i tynne strimler.</li>
+			<li>Riv ost eller skjær i små terninger. Bland sammen ingrediensene og pynt med friske jordbær.</li>
+			<li>Bland sammen balsamico og olivenolje og hell over salaten.</li>
 		</ol>
 		</section>
 
@@ -41,15 +41,17 @@
 		<section id="wall">
 		<div id="listTitle">Ingredienser</div>
 		<ul>
-			<li>4 stk grillet kyllinglår</li>
-			<li>350 g pastaskjell (evt fersk gnocchi)</li>
-			<li>2 båt hvitløk</li>
-			<li>1 ss rapsolje</li>
-			<li>1 1⁄4 dl eplemost</li>
-			<li>3 ss pesto</li>
-			<li>3 dl matfløte</li>
-			<li>200 g aspargestopper , -bønner eller små brokolibuketter</li>
-			<li>4 ss parmesan</li>
+			<li>1⁄2 stk isbergsalat</li>
+			<li>1 stk mango</li>
+			<li>1⁄4 stk vannmelon</li>
+			<li>2 stk nepe</li>
+			<li>3 dl rød paprika , gjerne i forskjellige farger</li>
+			<li>2 dl sukkererter</li>
+			<li>2 1⁄2 dl kokt skinke</li>
+			<li>100 g hvitost</li>
+			<li>2 ss olivenolje</li>
+			<li>1 ss balsamicoeddik</li>
+			<li>6 stk jordbær</li>
 		</ul>
 		</section>
 	</article>
@@ -60,20 +62,20 @@
 		<nav id="vertical">
 		
 		<ul id="recepies">
-			<li class="active"><a href="chickenleg.html">Kyllinglår med kremet pasta</a></li>
+			<li><a href="chickenleg.html">Kyllinglår med kremet pasta</a></li>
 			<li><a href="chiliconcarne.html">Chili-con-carne</a></li>
 			<li><a href="polser.html">Pølser med sopp og løk</a></li>
 			<li><a href="pitapizza.html">Pitapizza</a></li>
 			<li><a href="middagsvafler.html">Middagsvafler</a></li>
-			<li><a href="skinkesalat.html">Salat med skinke, jordbær og melon</a></li>
+			<li class="active"><a href="skinkesalat.html">Salat med skinke, jordbær og melon</a></li>
 			<li><a href="kyllingsalat.html">Kylling- og pastasalat</a></li>
 			<li><a href="karbonader.html">Karbonader med agurksalat</a></li>
 		</ul>
 		</nav>
 
 		<div class="arrow">
-			<img src="../img/left.jpg" alt="forrige middag" style="opacity:0.1">
-			<a href="chiliconcarne.html"><img src="../img/right.jpg" alt="neste middag"></a>
+			<a href="middagsvafler.html"><img src="../img/left.jpg" alt="forrige middag"></a>
+			<a href="kyllingsalat.html"><img src="../img/right.jpg" alt="neste middag"></a>
 		</div>
 
 		</aside>
@@ -89,7 +91,7 @@
         }*/
         </script>
 		<form method="post" action="../addComment.php" >
-		<input type="hidden" name="parentPost" value="chickenleg">
+		<input type="hidden" name="parentPost" value="skinkesalat">
 		<label for="name">Navn</label><br>
 		<input id="name" type="text" name="name" required="required" placeholder="Skriv ditt navn her">
 		<br>
@@ -113,7 +115,7 @@
             if(msg[0]=="invalidCaptcha" && msg[1]=="1"){
                 document.getElementById("recaptchaError").innerHTML="Invalid recaptcha";
             }
-            getAllComments("chickenleg");
+            getAllComments("skinkesalat");
         }
         </script>
 		</section>

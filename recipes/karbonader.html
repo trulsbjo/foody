@@ -9,7 +9,7 @@
     		theme : 'white'
  		};
  	</script>
-	<title>Kyllinglår med kremet pasta</title>
+	<title>Karbonader med agurksalat</title>
 </head>
 
 <body>
@@ -25,15 +25,16 @@
 	
 	
 	<article>
-	<img src="../img/chickenleg.jpeg" alt="Kyllinglår med kremet pasta">
-	<h2>Kyllinglår med kremet pasta</h2>
+	<img src="../img/karbonader.jpeg" alt="Kyllinglår med kremet pasta">
+	<h2>Karbonader med agurksalat</h2>
 		<section id="left">
 		<div id="title">Slik gjør du</div>
 		<ol>
-			<li>Varm kyllinglårene i ovn på 200° C til de er gjennomvarme ca. 15 minutter.</li>
-			<li>Kok fersk gnocchi i ca. 5 minutter, tørket pasta i ca. 10 minutter. Hell av vannet.</li>
-			<li>Fres hvitløk i litt olje og tilsett eplemost, pesto og fløte. Kok opp og la det koke noen minutter til sausen tykner.</li>
-			<li>Vend inn små aspargestopper, -bønner eller buketter av brokkoli. La grønnsakene bli gjennomvarme i sausen. Bland inn varm pasta.</li>
+			<li>Bland den franske dressingmiksen etter anvisning på posen.</li>
+			<li>Kutt agurk i tynne skiver (bruk gjerne en ostehøvel). Bland dem sammen med dressingen. </li>
+			<li>Varm karbonade i stekepannen eller i stekeovnen på 180 grader i 10 minutter. </li>
+			<li>Lag saus etter anvisning på posen. </li>
+			<li>Varm potet etter anvisning på pakningen. </li>
 		</ol>
 		</section>
 
@@ -41,15 +42,11 @@
 		<section id="wall">
 		<div id="listTitle">Ingredienser</div>
 		<ul>
-			<li>4 stk grillet kyllinglår</li>
-			<li>350 g pastaskjell (evt fersk gnocchi)</li>
-			<li>2 båt hvitløk</li>
-			<li>1 ss rapsolje</li>
-			<li>1 1⁄4 dl eplemost</li>
-			<li>3 ss pesto</li>
-			<li>3 dl matfløte</li>
-			<li>200 g aspargestopper , -bønner eller små brokolibuketter</li>
-			<li>4 ss parmesan</li>
+			<li>600 g ferdigstekt karbonade</li>
+			<li>1 pose eller beger ferdig soppsaus</li>
+			<li>1 stk agurk</li>
+			<li>2 pose fransk dressingmix</li>
+			<li>1 pk ferdigkokte poteter</li>
 		</ul>
 		</section>
 	</article>
@@ -60,20 +57,20 @@
 		<nav id="vertical">
 		
 		<ul id="recepies">
-			<li class="active"><a href="chickenleg.html">Kyllinglår med kremet pasta</a></li>
+			<li><a href="chickenleg.html">Kyllinglår med kremet pasta</a></li>
 			<li><a href="chiliconcarne.html">Chili-con-carne</a></li>
 			<li><a href="polser.html">Pølser med sopp og løk</a></li>
 			<li><a href="pitapizza.html">Pitapizza</a></li>
 			<li><a href="middagsvafler.html">Middagsvafler</a></li>
 			<li><a href="skinkesalat.html">Salat med skinke, jordbær og melon</a></li>
 			<li><a href="kyllingsalat.html">Kylling- og pastasalat</a></li>
-			<li><a href="karbonader.html">Karbonader med agurksalat</a></li>
+			<li class="active"><a href="karbonader.html">Karbonader med agurksalat</a></li>
 		</ul>
 		</nav>
 
 		<div class="arrow">
-			<img src="../img/left.jpg" alt="forrige middag" style="opacity:0.1">
-			<a href="chiliconcarne.html"><img src="../img/right.jpg" alt="neste middag"></a>
+			<a href="kyllingsalat.html"><img src="../img/left.jpg" alt="forrige middag"></a>
+			<img src="../img/right.jpg" alt="neste middag" style="opacity:0.1">
 		</div>
 
 		</aside>
@@ -89,7 +86,7 @@
         }*/
         </script>
 		<form method="post" action="../addComment.php" >
-		<input type="hidden" name="parentPost" value="chickenleg">
+		<input type="hidden" name="parentPost" value="karbonader">
 		<label for="name">Navn</label><br>
 		<input id="name" type="text" name="name" required="required" placeholder="Skriv ditt navn her">
 		<br>
@@ -113,7 +110,7 @@
             if(msg[0]=="invalidCaptcha" && msg[1]=="1"){
                 document.getElementById("recaptchaError").innerHTML="Invalid recaptcha";
             }
-            getAllComments("chickenleg");
+            getAllComments("karbonader");
         }
         </script>
 		</section>
