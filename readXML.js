@@ -1,5 +1,5 @@
 function getAllComments(parentPost){
-    var XMLfile="../comments/"+parentPost+".xml";
+    var XMLfile="../comments/"+parentPost+".xml?rand=" + Math.random();
 
     if (window.XMLHttpRequest)
     {
