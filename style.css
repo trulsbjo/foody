@@ -87,7 +87,7 @@ nav li:hover, nav li.active {
 	color: #666;
 }
 
-#management {
+.management {
 	overflow: auto;
 	margin-bottom: 20px;
 }
@@ -128,12 +128,12 @@ article #right {
 	width: 50%;
 }
 
-article #profileImg {
+article .profileImg {
 	float: left;
 	width: 30%;
 }
 
-article #profileText {
+article .profileText {
 	float: right;
 	width: 40%;
 	margin-right: 15%;
