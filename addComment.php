@@ -7,18 +7,17 @@
                                  $_POST["recaptcha_challenge_field"],
                                  $_POST["recaptcha_response_field"]);
 
+$name = $_POST["name"];
+$parentPost = $_POST["parentPost"];
+$comment = $_POST["comment"];
+$parentPost = str_replace(".html", "", $parentPost);
+
  if (!$resp->is_valid) {
    // What happens when the CAPTCHA was entered incorrectly
-   header("Location: /foody/recipes/".$parentPost.".html");
+   header("Location: /trulsbjo/foody/recipes/".$parentPost.".html?invalidCaptcha=1");
    exit;
 
  } else {
-
-	$name = $_POST["name"];
-	$parentPost = $_POST["parentPost"];
-	$comment = $_POST["comment"];
-	$parentPost = str_replace(".html", "", $parentPost);
-
 	$commentPath = "comments/".$parentPost.".xml";
 	if(!file_exists($commentPath)){
     	$f = fopen($commentPath, "w");
@@ -43,7 +42,7 @@
 	$myfile = fopen($commentPath, "w") or die("Unable to open file2");
 	fwrite($myfile, $filecontent);
 	fclose($myfile);
-	header("Location: /foody/recipes/".$parentPost.".html");
+	header("Location: /trulsbjo/foody/recipes/".$parentPost.".html");
 	#header("Location: /foody/testsubmit.html");
 	exit;
 	}
