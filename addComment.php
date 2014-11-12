@@ -1,8 +1,12 @@
 <?php
 
- require_once('recaptcha-php-1.11/recaptchalib.php');
- $privatekey = "6LflhfwSAAAAAHIimDpGBPE2GICytqHcdj5yjCou";
- $resp = recaptcha_check_answer ($privatekey,
+require_once('recaptcha-php-1.11/recaptchalib.php');
+if(!@include("local_settings1.php")){
+    $userpath="/trulsbjo";
+}
+
+$privatekey = "6LflhfwSAAAAAHIimDpGBPE2GICytqHcdj5yjCou";
+$resp = recaptcha_check_answer ($privatekey,
                                  $_SERVER["REMOTE_ADDR"],
                                  $_POST["recaptcha_challenge_field"],
                                  $_POST["recaptcha_response_field"]);
@@ -14,7 +18,7 @@ $parentPost = str_replace(".html", "", $parentPost);
 
  if (!$resp->is_valid) {
    // What happens when the CAPTCHA was entered incorrectly
-   header("Location: /trulsbjo/foody/recipes/".$parentPost.".html?invalidCaptcha=1");
+   header("Location: ".$userpath."/foody/recipes/".$parentPost.".html?invalidCaptcha=1");
    exit;
 
  } else {
