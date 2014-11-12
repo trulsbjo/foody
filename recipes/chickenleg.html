@@ -4,6 +4,11 @@
 	<meta charset="UTF-8">
 	<link rel="stylesheet" type="text/css" href="../style.css">
     <script type="text/javascript" src="../readXML.js"></script>
+    <script type="text/javascript">
+ 		var RecaptchaOptions = {
+    		theme : 'white'
+ 		};
+ 	</script>
 	<title>Kyllinglår med kremet pasta</title>
 </head>
 
@@ -86,14 +91,14 @@
 		<form method="post" action="../addComment.php" >
 		<input type="text" name="parentPost" value="chickenleg" hidden>
 		<label for="name">Navn</label><br>
-		<input type="text" name="name" required="required" placeholder="Skriv ditt navn her">
+		<input id="name" type="text" name="name" required="required" placeholder="Skriv ditt navn her">
 		<br>
 		<label for="comment">Kommentar</label><br>
-		<textarea name="comment" required="required" placeholder="Skriv din kommentar her" rows="5"></textarea>
+		<textarea id="comment" name="comment" required="required" placeholder="Skriv din kommentar her" rows="5"></textarea>
 		<br>
 		<script type="text/javascript" src="http://www.google.com/recaptcha/api/challenge?k=6LflhfwSAAAAAK8Dbkorr4JsDH-aVom-bfTc4EKq"></script>
   		<noscript>
-     		<iframe src="http://www.google.com/recaptcha/api/noscript?k=6LflhfwSAAAAAK8Dbkorr4JsDH-aVom-bfTc4EKq" height="300" width="500" frameborder="0"></iframe><br>
+     		<iframe src="http://www.google.com/recaptcha/api/noscript?k=6LflhfwSAAAAAK8Dbkorr4JsDH-aVom-bfTc4EKq" height="300" width="500"></iframe><br>
      		<textarea name="recaptcha_challenge_field" rows="3" cols="40"></textarea>
      		<input type="hidden" name="recaptcha_response_field" value="manual_challenge">
   		</noscript>

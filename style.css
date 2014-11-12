@@ -1,6 +1,6 @@
 body {
 	margin: 0 auto;
-	padding: 0 auto;
+	padding: 0;
 }
 
 h1, h2, h3, h4, h5, h6, p, a {
@@ -23,7 +23,7 @@ footer {
 	padding-top: 20px;
 	border-top: 1px solid #ddd;
 	text-align: center;
-	width: 100;
+	width: 100%;
 }
 
 
@@ -70,24 +70,24 @@ nav li:hover, nav li.active {
     background-color: #FF6F00;
 }
 
-#recommendation {
+.recommendation {
 	text-align: center;
 }
 
-#recommendation a {
+.recommendation a {
 	color: #aaa;
 	font-size: 30px;
 	text-decoration: none;
 }
 
-#recommendation p {
+.recommendation p {
 	text-align: center;
 	margin-top: -30px;
 	margin-bottom: 50px;
 	color: #666;
 }
 
-#management {
+.management {
 	overflow: auto;
 	margin-bottom: 20px;
 }
@@ -102,7 +102,7 @@ nav li:hover, nav li.active {
 
 .container {
 	margin: auto;
-	padding: auto;
+	padding: 0;
 	overflow: auto;
 }
 
@@ -128,12 +128,12 @@ article #right {
 	width: 50%;
 }
 
-article #profileImg {
+article .profileImg {
 	float: left;
 	width: 30%;
 }
 
-article #profileText {
+article .profileText {
 	float: right;
 	width: 40%;
 	margin-right: 15%;
