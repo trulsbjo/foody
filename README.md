@@ -1,4 +1,4 @@
-foody
+foody - a class project
 =====
 
 Team members: Truls Hamborg, Sindre Nygård, Nitharshaan Thevarajah.
